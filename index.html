@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Safe Family Internet — Your Family Toolkit</title>
+<meta name="description" content="The setup guides from the Safe Family Internet night in Lake Country: device controls, your router, DNS, and the Castle Model." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --cobalt:#1B1BCC; --magenta:#E8007D; --ink:#16163a; --muted:#5b5b7a; --line:#e7e7f4; --bg:#f4f4f8; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:'Inter',-apple-system,'Segoe UI',sans-serif; color:var(--ink); background:var(--bg); line-height:1.5; }
+  .wrap{ max-width:680px; margin:0 auto; padding:0 18px 56px; }
+  header{ background:var(--cobalt); color:#fff; padding:36px 0 30px; }
+  .head-in{ max-width:680px; margin:0 auto; padding:0 18px; display:flex; align-items:center; gap:16px; }
+  .badge{ flex:0 0 auto; width:58px; height:70px; }
+  .title{ font-family:'Bebas Neue',sans-serif; font-size:46px; line-height:0.9; letter-spacing:1px; }
+  .tag{ font-size:15px; opacity:0.92; margin-top:5px; font-weight:500; }
+  .lead{ font-size:17px; color:var(--muted); margin:28px 0 22px; }
+  .lead strong{ color:var(--ink); font-weight:600; }
+  .card{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px 20px 22px; margin-bottom:14px; display:flex; flex-direction:column; }
+  .layer{ font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--cobalt); }
+  .card h2{ font-family:'Bebas Neue',sans-serif; font-size:30px; letter-spacing:0.5px; color:var(--ink); line-height:1; margin:7px 0 6px; }
+  .card p{ font-size:15px; color:var(--muted); margin-bottom:16px; }
+  .btn{ align-self:flex-start; display:inline-block; background:var(--cobalt); color:#fff; text-decoration:none;
+        font-weight:600; font-size:15px; padding:12px 26px; border-radius:6px; }
+  .btn:hover{ background:#1414a8; }
+  .card.lead-card{ border-left:5px solid var(--magenta); }
+  .card.lead-card .layer{ color:var(--magenta); }
+  footer{ margin-top:30px; padding-top:22px; border-top:1px solid var(--line); font-size:13px; color:var(--muted); }
+  footer a{ color:var(--cobalt); }
+  @media(max-width:480px){ .title{ font-size:38px; } .head-in{ gap:12px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-in">
+    <svg class="badge" viewBox="0 12 400 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M 200 52 C 255 52,340 78,340 98 L 340 310 C 340 390,280 440,200 462 C 120 440,60 390,60 310 L 60 98 C 60 78,145 52,200 52 Z" fill="#fff"/>
+      <path d="M 143 142 A 57 57 0 0 1 257 142" fill="none" stroke="#1B1BCC" stroke-width="3"/>
+      <path d="M 158 142 A 42 42 0 0 1 242 142" fill="none" stroke="#1B1BCC" stroke-width="3"/>
+      <path d="M 173 142 A 27 27 0 0 1 227 142" fill="none" stroke="#1B1BCC" stroke-width="3"/>
+      <circle cx="200" cy="142" r="12" fill="#E8007D"/>
+      <text x="200" y="238" text-anchor="middle" textLength="195" lengthAdjust="spacingAndGlyphs" font-family="'Bebas Neue',Impact,sans-serif" font-size="104" fill="#1B1BCC">SAFE</text>
+      <text x="200" y="308" text-anchor="middle" textLength="195" lengthAdjust="spacingAndGlyphs" font-family="'Bebas Neue',Impact,sans-serif" font-size="80" fill="#1B1BCC">FAMILY</text>
+      <text x="200" y="369" text-anchor="middle" textLength="195" lengthAdjust="spacingAndGlyphs" font-family="'Bebas Neue',Impact,sans-serif" font-size="62" fill="#1B1BCC">INTERNET</text>
+    </svg>
+    <div>
+      <div class="title">YOUR FAMILY TOOLKIT</div>
+      <div class="tag">The setup guides from the Safe Family Internet night, Lake Country.</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <p class="lead">Everything from the session, in one place. <strong>Start with the layer you committed to, then add the others when you're ready.</strong> Each guide is one tap at a time, no tech knowledge needed.</p>
+
+  <div class="card lead-card">
+    <div class="layer">Start here · the whole picture</div>
+    <h2>The Castle Model</h2>
+    <p>The five layers of protection on one page. What each one catches, and the one honest gap.</p>
+    <a class="btn" href="castle-model.pdf">Open the one-pager</a>
+  </div>
+
+  <div class="card">
+    <div class="layer">Layer 2 · Device controls</div>
+    <h2>Apple Screen Time</h2>
+    <p>Quiet hours, app limits, content lockdown, and the passcode that makes it stick. Step by step, with screenshots.</p>
+    <a class="btn" href="screen-time.pdf">Open the guide</a>
+  </div>
+
+  <div class="card">
+    <div class="layer">Layer 3 · Your router</div>
+    <h2>TP-Link HomeShield</h2>
+    <p>The one device that protects every phone, tablet, and console on your WiFi at once. Profiles, blocking, and bedtimes.</p>
+    <a class="btn" href="homeshield.pdf">Open the guide</a>
+  </div>
+
+  <div class="card">
+    <div class="layer">Layer 4 · The free filter</div>
+    <h2>CIRA Canadian Shield (DNS)</h2>
+    <p>A free, Canadian-built filter for your whole home. Two numbers, and where to put them on every common router.</p>
+    <a class="btn" href="dns.pdf">Open the guide</a>
+  </div>
+
+  <footer>
+    Created for the Lake Country community by Colin Calnan, Safe Family Internet Initiative.
+    Please don't repost the files. Send people to <a href="https://safefamilyinternet.ca">safefamilyinternet.ca</a> to get their own copy.
+  </footer>
+</div>
+
+</body>
+</html>
